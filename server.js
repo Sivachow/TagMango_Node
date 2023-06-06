@@ -182,6 +182,7 @@ app.get("/api/persons/:id", async (req, res) => {
 
     res.json(person);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: "Server error" });
   }
 });

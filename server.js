@@ -26,7 +26,6 @@ app.post(
     { name: "videos", maxCount: 3 },
   ]),
   async (req, res) => {
-    console.log(req.body);
     const {
       firstName,
       lastName,
